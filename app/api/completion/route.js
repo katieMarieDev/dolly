@@ -8,7 +8,7 @@ export const maxDuration = 30;
 export async function POST(req) {
     const { prompt } = await req.json();
     const result = await streamText({
-        model: openai("gpt-3.5-turbo"),
+        model: openai("gpt-3.5-turbo", process.env.NEXT_PUBLIC_OPENAI_API_KEY),
         prompt: `Write a pep talk in the style of Dolly Parton in response to ${prompt}.  
         Make sure each is varied and doesn't use too much of the same language as the previous response.`
     });
