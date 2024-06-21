@@ -76,7 +76,7 @@ export default function Component({ handleSubmit, handleInputChange, input, comp
   </a>"
 </div>
 <div className="text-center mt-6 text-pink-600">
-  Made by <a href="https://www.linkedin.com/in/katiemarie" className="text-pink-600 underline" target="_blank" rel="noopener noreferrer">Katie</a>, inspired by <a href="https://www.moonhighway.com/about/" className="text-pink-600 underline">Eve Porcello</a>'s workshop at <a href="https://cascadiajs.com/" className="text-pink-600 underline">CascadiaJS 2024</a>
+  Made by <a href="https://www.linkedin.com/in/katiemariedev" className="text-pink-600 underline" target="_blank" rel="noopener noreferrer">Katie</a>, inspired by <a href="https://www.moonhighway.com/about/" className="text-pink-600 underline">Eve Porcello</a>'s workshop at <a href="https://cascadiajs.com/" className="text-pink-600 underline">CascadiaJS 2024</a>
 </div>
 <div className="text-center mt-6 text-pink-600">
   <a href="https://github.com/katieMarieDev" className="text-pink-600 underline" target="_blank" rel="noopener noreferrer">GitHub</a>
