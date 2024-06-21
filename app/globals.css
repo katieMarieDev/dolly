@@ -127,7 +127,6 @@ ul {
 }
 
 li {
-  border-bottom: 1px solid var(--primary-color); /* Pink border for list items */
   padding-bottom: 10px;
   margin-bottom: 10px;
   font-family: 'Baloo 2', cursive, sans-serif;
@@ -147,7 +146,7 @@ li {
   }
 
   .main-container img {
-    min-width: 100%; /* Make the image the same width as the yellow background */
+    width: 100%; /* Make the image the same width as the yellow background */
     border-radius: 15px; /* Ensure the border radius is visible */
   }
 }
@@ -157,4 +156,23 @@ li {
   max-width: 800px; /* Reduce this value to make it narrower */
   width: 100%;
   padding: 0 16px; /* Add some padding for better spacing */
+}
+
+/* Styling for the disclaimer section */
+.disclaimer {
+  font-size: 1em;
+  color: var(--dark-text-color);
+  margin-top: 1em;
+  font-family: 'Baloo 2', cursive, sans-serif;
+  border-bottom: 1px solid var(--primary-color); /* Pink border for list items */
+  margin-bottom: 20px;
+}
+
+.disclaimer ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.disclaimer ol li {
+  margin-bottom: 0.5em;
 }

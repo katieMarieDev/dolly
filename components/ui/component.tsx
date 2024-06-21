@@ -52,6 +52,15 @@ export default function Component({ handleSubmit, handleInputChange, input, comp
         </div>
         <div className="bg-card rounded-xl p-6 shadow-sm mt-6">
           <h2 className="text-2xl font-bold">Dolly's Past Pep Talks</h2>
+          <div className='disclaimer'> 
+          <p><strong>* Pep talk history is just for you!</strong> Your past pep talks are stored locally on your computer in localStorage. This means they are private and only accessible from your device.</p>
+          <p className='pt-4 pb-4'>To clear your history, follow these steps:</p>
+          <ol>
+            <li>Right-click on the page and select "Inspect".</li>
+            <li>Navigate to the "Application" tab in the developer tools.</li>
+            <li>Under "Storage", find and clear your localStorage.</li>
+          </ol>
+          </div>
           <ul>
             {history.slice().reverse().map((entry, index) => (
               <li key={index} className="mb-4">
