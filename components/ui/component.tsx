@@ -37,7 +37,7 @@ export default function Component({ handleSubmit, handleInputChange, input, comp
               value={input}
               onChange={handleInputChange}
               placeholder="Well Dolly, I'm worried about..."
-              className="w-full rounded-xl border border-muted px-4 py-3 pr-16 focus:outline-none focus:ring-2 focus:ring-primary text-gray-700"
+              className="w-full rounded-xl border border-muted px-4 py-3 pr-16 focus:outline-none focus:ring-2 focus:ring-primary"
               rows={3}
             />
             <Button type="submit" className="absolute top-1/2 right-4 -translate-y-1/2">
@@ -64,16 +64,24 @@ export default function Component({ handleSubmit, handleInputChange, input, comp
         <div className="text-center mt-6">
           <p className="text-muted-foreground">Share the love and be a Dolly to someone in need.</p>
         </div>
-        <div className="text-center mt-6">
-          <a
-            href="https://dollyparton.com/life-and-career/music/i-believe-in-you-free-download"
-            className="text-pink-600 underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download Dolly's song "I Believe In You" for free!
-          </a>
-        </div>
+        <div className="text-center mt-6 text-pink-600">
+  Need more encouragement? <br />
+  Download Dolly's song "<a
+    href="https://dollyparton.com/life-and-career/music/i-believe-in-you-free-download"
+    className="text-pink-600 underline"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    I Believe In You
+  </a>"
+</div>
+<div className="text-center mt-6 text-pink-600">
+  Made by <a href="https://www.linkedin.com/in/katiemarie" className="text-pink-600 underline" target="_blank" rel="noopener noreferrer">Katie</a>, inspired by <a href="https://www.moonhighway.com/about/" className="text-pink-600 underline">Eve Porcello</a>'s workshop at <a href="https://cascadiajs.com/" className="text-pink-600 underline">CascadiaJS 2024</a>
+</div>
+<div className="text-center mt-6 text-pink-600">
+  <a href="https://github.com/katieMarieDev" className="text-pink-600 underline" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+
       </div>
     </div>
   );

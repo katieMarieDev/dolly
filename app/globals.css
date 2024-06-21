@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,7 +29,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
   margin: 0;
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun and friendly font */
+  font-family: 'Baloo 2', cursive, sans-serif; /* Use Baloo 2 font */
 }
 
 @layer utilities {
@@ -38,7 +40,7 @@ body {
 
 .container {
   @apply flex flex-col items-center justify-start min-h-screen p-4;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Baloo 2', cursive, sans-serif;
 }
 
 .bg-background {
@@ -77,10 +79,12 @@ button[type="submit"] {
 
 h1, h2 {
   @apply text-pink-600;
+  font-family: 'Baloo 2', cursive, sans-serif;
 }
 
 h1 {
   text-shadow: 2px 2px var(--secondary-color); /* Gold shadow */
+  padding-top: 20px; /* Add padding to the top */
 }
 
 h2 {
@@ -88,12 +92,15 @@ h2 {
 }
 
 textarea {
-  @apply border-2 border-pink-400 bg-yellow-50 text-gray-700;
+  @apply border-2 border-pink-400 bg-yellow-50;
+  color: var(--dark-text-color); /* Change text color to dark purple */
   width: 100%; /* Match the width of the response section */
+  font-family: 'Baloo 2', cursive, sans-serif; /* Use Baloo 2 font */
 }
 
 button {
   @apply bg-pink-400 text-white border-none cursor-pointer;
+  font-family: 'Baloo 2', cursive, sans-serif; /* Use Baloo 2 font */
 }
 
 button:hover {
@@ -102,10 +109,12 @@ button:hover {
 
 .text-muted-foreground {
   font-size: 1.2em;
+  font-family: 'Baloo 2', cursive, sans-serif;
 }
 
 p {
   color: var(--dark-text-color); /* Dark purple text */
+  font-family: 'Baloo 2', cursive, sans-serif;
 }
 
 ul {
@@ -117,10 +126,12 @@ li {
   border-bottom: 1px solid var(--primary-color); /* Pink border for list items */
   padding-bottom: 10px;
   margin-bottom: 10px;
+  font-family: 'Baloo 2', cursive, sans-serif;
 }
 
 /* Custom Class for the Main Container to Make it Wider */
 .main-container {
-  max-width: 800px; /* Reduce this value to make it narrower */
+  max-width: 600px; /* Adjust the value to make it narrower */
   width: 100%;
+  font-family: 'Baloo 2', cursive, sans-serif;
 }
