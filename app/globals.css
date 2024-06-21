@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary-color: #ff69b4; /* Hot pink */
+  --secondary-color: #ffd700; /* Gold */
+  --accent-color: #ff00ff; /* Fuchsia */
+  --text-color: #4b0082; /* Indigo */
+  --dark-text-color: #330066; /* Dark Purple */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --text-color: #ffffff;
+  }
+}
+
+body {
+  @apply min-h-screen flex flex-col items-center justify-center;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun and friendly font */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.container {
+  @apply flex flex-col items-center justify-start min-h-screen p-4;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.bg-background {
+  background-color: var(--secondary-color);
+}
+
+.text-muted-foreground {
+  color: var(--dark-text-color);
+}
+
+.bg-card {
+  background-color: #ffffff;
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  border: 3px dashed var(--primary-color); /* Add a dashed border */
+}
+
+.relative {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1, h2 {
+  @apply text-pink-600;
+}
+
+h1 {
+  text-shadow: 2px 2px var(--secondary-color); /* Gold shadow */
+}
+
+h2 {
+  text-shadow: 1px 1px var(--secondary-color); /* Gold shadow */
+}
+
+textarea {
+  @apply border-2 border-pink-400 bg-yellow-50 text-gray-700;
+  width: 100%; /* Match the width of the response section */
+}
+
+button {
+  @apply bg-pink-400 text-white border-none cursor-pointer;
+}
+
+button:hover {
+  @apply bg-pink-500;
+}
+
+.text-muted-foreground {
+  font-size: 1.2em;
+}
+
+p {
+  color: var(--dark-text-color); /* Dark purple text */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border-bottom: 1px solid var(--primary-color); /* Pink border for list items */
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* Custom Class for the Main Container to Make it Wider */
+.main-container {
+  max-width: 800px; /* Reduce this value to make it narrower */
+  width: 100%;
+}
