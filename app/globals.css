@@ -36,6 +36,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .text-dark-text-color {
+    color: var(--dark-text-color);
+  }
 }
 
 .container {
@@ -134,4 +138,23 @@ li {
   max-width: 600px; /* Adjust the value to make it narrower */
   width: 100%;
   font-family: 'Baloo 2', cursive, sans-serif;
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 768px) {
+  .main-container {
+    padding-top: 0; /* Remove padding on top */
+  }
+
+  .main-container img {
+    min-width: 100%; /* Make the image the same width as the yellow background */
+    border-radius: 15px; /* Ensure the border radius is visible */
+  }
+}
+
+/* General styling for the main container */
+.main-container {
+  max-width: 800px; /* Reduce this value to make it narrower */
+  width: 100%;
+  padding: 0 16px; /* Add some padding for better spacing */
 }
